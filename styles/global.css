@@ -7,7 +7,7 @@
 html,
 body {
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
     background-color: var(--backgroundGeneral);
@@ -70,8 +70,7 @@ textarea.input::placeholder {
     color: var(--placeholderColor);
 }
 
-input.input:focus,
-textarea.input:focus {
+input.input:focus {
     transition: .25s ease-in-out;
     background-color: var(--blueDark);
     color: var(--white);
