@@ -6,6 +6,8 @@
 
 html,
 body {
+    width: 100vw;
+    height: 100vh;
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
     background-color: var(--backgroundGeneral);
@@ -18,6 +20,20 @@ body {
     --boxShadowGeneral: 0px 5px 4px -3px rgba(0, 28, 55, 0.25);
 }
 
+p {
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+input,
+textarea {
+    font-family: 'Poppins', sans-serif;
+    resize: vertical;
+}
+
 button.button,
 input.button {
     background-color: var(--blueDark);
@@ -28,4 +44,35 @@ input.button {
     font-weight: 600;
     color: var(--white);
     border-radius: .8rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button.button:hover,
+input.button:hover {
+    filter: brightness(1.4);
+}
+
+input.input,
+textarea.input {
+    border: none;
+    border-radius: .8rem;
+    background-color: var(--white);
+    width: 100%;
+    padding: 1.4rem 1.6rem;
+    margin: .8rem 0;
+    outline: none;
+    font-size: 1.4rem;
+}
+
+input.input::placeholder,
+textarea.input::placeholder {
+    color: var(--placeholderColor);
+}
+
+input.input:focus,
+textarea.input:focus {
+    transition: .25s ease-in-out;
+    background-color: var(--blueDark);
+    color: var(--white);
 }

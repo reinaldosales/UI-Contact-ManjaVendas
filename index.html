@@ -20,13 +20,53 @@
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/style.css">
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title> ManjaVendas - Contato </title>
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
+    <title> ManjaVendas </title>
 </head>
 
 <body>
-    <script src="script/jquery.js"></script>
-    <script src="script/script.js"></script>
+    <div class="container">
+        <div class="logo">
+            <a href="#">
+                <img src="assets/manja_logo.svg" alt="Logo Manja Vendas">
+            </a>
+        </div>
+        <div class="card_container">
+            <div class="card_title">
+                <h2>Fale conosco</h2>
+                <img src="assets/icon_chatbox.svg" alt="Icone fale conosco">
+            </div>
+            <div class="card_form">
+                <form>
+                    <div class="name">
+                        <label for="name">Nome</label>
+                        <input class="input" type="text" name="name" id="name" placeholder="Digite seu nome">
+                    </div>
+                    <div class="email">
+                        <label for="email">E-mail</label>
+                        <input class="input" type="text" name="email" id="email" placeholder="Digite seu email">
+                    </div>
+                    <div class="telefone">
+                        <label for="telefone">Telefone</label>
+                        <input class="input" type="text" name="telefone" id="telefone" placeholder="Digite seu telefone">
+                    </div>
+                    <div class="message">
+                        <label for="message">Mensagem</label>
+                        <textarea class="input" type="number" name="message" size="50" id="message" placeholder="Digite sua mensagem.."></textarea>
+                    </div>
+                    <div class="buttonSend">
+                        <button class="button" id="button"> enviar </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>Todos os direitos reservados - Manja Vendas&copy;</p>
+            <script src="script/jquery.js"></script>
+            <script src="script/script.js"></script>
+        </footer>
+    </div>
+
 </body>
 
 </html>
