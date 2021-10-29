@@ -41,31 +41,39 @@
                     <div class="name">
                         <label for="name">Nome</label>
                         <input class="input" type="text" name="name" id="name" placeholder="Digite seu nome">
+                        <span id="name_error"></span>
                     </div>
                     <div class="email">
                         <label for="email">E-mail</label>
                         <input class="input" type="text" name="email" id="email" placeholder="Digite seu email">
+                        <p id="email_error"></p>
                     </div>
                     <div class="telefone">
                         <label for="telefone">Telefone</label>
-                        <input class="input" type="text" name="telefone" id="telefone" placeholder="Digite seu telefone">
+                        <input class="input" type="text" name="phone" id="phone" placeholder="Digite seu telefone">
+                        <p id="phone_error"></p>
                     </div>
                     <div class="message">
                         <label for="message">Mensagem</label>
-                        <textarea class="input" type="number" name="message" size="50" id="message" placeholder="Digite sua mensagem.."></textarea>
-                    </div>
-                    <div class="buttonSend">
-                        <button class="button" id="button"> enviar </button>
+                        <textarea class="input" type="text" name="message" size="50" id="message" placeholder="Digite sua mensagem.."></textarea>
                     </div>
                 </form>
+                <div class="buttonSend">
+                    <button class="button" id="button"> enviar </button>
+                </div>
             </div>
         </div>
+
         <footer class="footer">
             <p>Todos os direitos reservados - Manja Vendas&copy;</p>
             <script src="script/jquery.js"></script>
             <script src="script/script.js"></script>
         </footer>
     </div>
+
+    <!-- <div class="message_input_empty" id="message_input_empty">
+        <p> </p>
+    </div> -->
 
 </body>
 

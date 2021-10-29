@@ -6,6 +6,8 @@
 
 html,
 body {
+    display: flex;
+    justify-content: center;
     width: 100vw;
     /* height: 100vh; */
     font-size: 62.5%;
@@ -74,4 +76,16 @@ input.input:focus {
     transition: .25s ease-in-out;
     background-color: var(--blueDark);
     color: var(--white);
+}
+
+div.message_input_empty {
+    position: absolute;
+    top: 15rem;
+    align-self: center;
+    background-color: #fd3838;
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: .8rem;
+    box-shadow: var(--boxShadowGeneral);
+    display: none;
 }
