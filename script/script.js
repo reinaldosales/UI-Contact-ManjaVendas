@@ -1,5 +1,15 @@
 $(document).ready(function() {
+
     $('#button').click(function(e) {
+        e.preventDefault();
+
+        $('#name_error').html('');
+        $('#email_error').html('');
+        $('#phone_error').html('');
+        $('#name').removeClass('input_empty');
+        $('#email').removeClass('input_empty');
+        $('#phone').removeClass('input_empty');
+
 
         let name = $.trim($('#name').val());
         let email = $.trim($('#email').val());
@@ -7,21 +17,18 @@ $(document).ready(function() {
         let message = $.trim($('#message').val());
 
         if (name === '') {
-            $('#name_error').html('<p> Campo Nome não pode estar vázio. </p>');
-            $('#name_error').slideDown(800);
+            $('#name_error').html('Campo não pode estar vazio.');
+            $('#name').addClass('input_empty');
         }
 
         if (email === '') {
-            $('#message_input_empty').html('<p> Campo Email não pode estar vázio. </p>');
-            $('#message_input_empty').fadeIn(1000).fadeOut(2500);
+            $('#email_error').html('Campo não pode estar vazio.');
+            $('#email').addClass('input_empty');
         }
 
-
-
-        // if (phone === '') {
-        //     $('#message_input_empty').html('<p> Campo Telefone não pode estar vázio. </p>');
-        //     $('#message_input_empty').fadeIn(2000).fadeOut(5000);
-        // }
-
+        if (phone === '') {
+            $('#phone_error').html('Campo não pode estar vazio.');
+            $('#phone').addClass('input_empty');
+        }
     });
 });

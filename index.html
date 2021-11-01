@@ -36,22 +36,22 @@
                 <h2>Fale conosco</h2>
                 <img src="assets/icon_chatbox.svg" alt="Icone fale conosco">
             </div>
-            <div class="card_form">
+            <div id="card_form" class="card_form">
                 <form>
                     <div class="name">
                         <label for="name">Nome</label>
                         <input class="input" type="text" name="name" id="name" placeholder="Digite seu nome">
-                        <span id="name_error"></span>
+                        <p class="message_error" id="name_error"></p>
                     </div>
                     <div class="email">
                         <label for="email">E-mail</label>
-                        <input class="input" type="text" name="email" id="email" placeholder="Digite seu email">
-                        <p id="email_error"></p>
+                        <input class="input" type="email" name="email" id="email" placeholder="Digite seu email">
+                        <p class="message_error" id="email_error"></p>
                     </div>
                     <div class="telefone">
                         <label for="telefone">Telefone</label>
                         <input class="input" type="text" name="phone" id="phone" placeholder="Digite seu telefone">
-                        <p id="phone_error"></p>
+                        <p class="message_error" id="phone_error"></p>
                     </div>
                     <div class="message">
                         <label for="message">Mensagem</label>
